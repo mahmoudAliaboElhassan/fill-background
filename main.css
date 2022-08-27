@@ -1,0 +1,51 @@
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: #444;
+            }
+            
+            .container {
+                background-color: green;
+                width: 400px;
+                margin: 20px auto;
+                color: black;
+                height: 300px;
+                overflow: hidden;
+            }
+            
+            .container .number {
+                background-color: red;
+                width: fit-content;
+                border-radius: 50%;
+                margin: 10px auto;
+                padding: 20px;
+                transition: 1s;
+            }
+            
+            .container .heading {
+                font-size: 35px;
+                font-weight: 400;
+                margin: 20px auto;
+                transition: 1s;
+                width: fit-content;
+            }
+            
+            .container p {
+                transition: 1s;
+                padding: 15px;
+                font-size: 19px;
+            }
+            
+            .container:hover .number {
+                box-shadow: 0 0 0 300px red;
+            }
+            
+            .container:hover .heading {
+                color: white;
+            }
+            
+            .container:hover p {
+                color: white;
+            }
